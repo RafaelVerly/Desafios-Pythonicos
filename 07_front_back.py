@@ -12,13 +12,13 @@ a-frente + b-frente + a-trás + b-trás
 """
 import math
 def front_back(a, b):
-    def divide_str(d):
-       pos = math.ceil(len(d) / 2)
-       return pos
-    meio = divide_str(a)
-    meioB = divide_str(b)
+    def acha_meio(d):
+       meio = math.ceil(len(d) / 2)
+       return meio
+    meioA = acha_meio(a)
+    meioB = acha_meio(b)
 
-    return f'{a[:meio]}{b[:meioB]}{a[meio:]}{b[meioB:]}'
+    return f'{a[:meioA]}{b[:meioB]}{a[meioA:]}{b[meioB:]}'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
