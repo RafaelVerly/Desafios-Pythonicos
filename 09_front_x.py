@@ -19,9 +19,7 @@ def front_x(words):
             palavrasX.append(palavra)
         else:
             palavras_sem_x.append(palavra)
-    palavras_sem_x.sort()
-    palavrasX.sort()
-    return palavrasX + palavras_sem_x
+    return sorted(palavrasX) + sorted(palavras_sem_x)
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
